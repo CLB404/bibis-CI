@@ -39,7 +39,7 @@ class VerlaengerungsServiceTest {
     @Test
     void lehntAbWennVorgemerkt() {
         // Arrange
-        Ausleihe ausleihe = new Ausleihe("T-4711", LocalDate.of(2026, 11, 2));
+        Ausleihe ausleihe = new Ausleihe("T-4711", LocalDate.of(2026, 11, 23));
         // Voraussetzung: Die Anzahl der Verlängerungen ist 0.
         // Eine Ablehnung kann also nicht durch die Grenze von 3 entstehen.
         when(vormerkungen.existiertVormerkung("T-4711")).thenReturn(true);    // Stubbing
